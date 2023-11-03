@@ -1,0 +1,17 @@
+Source-Makefile: package/libs/clinkc/Makefile
+Package: clinkc
+Version: 2.4-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +expat +libopenssl +libuuid +libzyutil
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: HTTP general library
+Maintainer: 
+Source: clinkc-2.4.tar.gz
+Type: ipkg
+Description: 	CyberLink for C is a development package for UPnP??developers
+
+@@
+
+

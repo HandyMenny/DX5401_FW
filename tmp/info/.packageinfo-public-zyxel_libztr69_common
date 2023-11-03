@@ -1,0 +1,21 @@
+Source-Makefile: package/public-zyxel/libztr69_common/Makefile
+Package: libztr69_common
+Version: 1.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +clinkc +openssl-util +libuuid +
+Menu-Depends: 
+Provides: 
+Build-Depends: ztr69
+Section: opt
+Category: ZyXEL Packages
+Title: ZyXEL TR69 Command Line Interface
+Maintainer: 
+Source: 
+Type: ipkg
+Description: ZyXEL TR69 Command Line Interface
+
+@@
+Config:
+  
+@@
+
+

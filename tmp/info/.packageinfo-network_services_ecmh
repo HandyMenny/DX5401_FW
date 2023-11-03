@@ -1,0 +1,19 @@
+Source-Makefile: package/network/services/ecmh/Makefile
+Package: ecmh
+Submenu: Routing and Redirection
+Version: 2005.02.09
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ip +librt +@IPV6
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: IPV6 Multicast Routing Daemon
+Maintainer: 
+Source: ecmh-2005.02.09.tar.gz
+Type: ipkg
+Description: 	Easy Cast du Multi Hub (ecmh) is a networking daemon 
+	that acts as a full IPv6 MLDv1 and MLDv2 Multicast "Router".
+
+@@
+
+

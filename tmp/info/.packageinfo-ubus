@@ -1,0 +1,66 @@
+Source-Makefile: package/ubus/Makefile
+Package: ubus
+Submenu: System
+Version: 2012-12-15-bb856ad8a9a1e786494d01e34bbfe2b4d2134021
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libubus +libblobmsg-json +ubusd
+Menu-Depends: 
+Provides: 
+Section: luci2
+Category: LuCI2
+Title: OpenWrt RPC client utility
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Source: ubus-2012-12-15-bb856ad8a9a1e786494d01e34bbfe2b4d2134021.tar.gz
+Type: ipkg
+Description: OpenWrt RPC client utility
+Felix Fietkau <nbd@openwrt.org>
+@@
+
+Package: ubusd
+Submenu: System
+Version: 2012-12-15-bb856ad8a9a1e786494d01e34bbfe2b4d2134021
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox +libubus
+Menu-Depends: 
+Provides: 
+Section: luci2
+Category: LuCI2
+Title: OpenWrt RPC daemon
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Source: ubus-2012-12-15-bb856ad8a9a1e786494d01e34bbfe2b4d2134021.tar.gz
+Type: ipkg
+Description: OpenWrt RPC daemon
+Felix Fietkau <nbd@openwrt.org>
+@@
+
+Package: libubus
+Submenu: Libraries
+Version: 2012-12-15-bb856ad8a9a1e786494d01e34bbfe2b4d2134021
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libubox
+Menu-Depends: 
+Provides: 
+Section: luci2
+Category: LuCI2
+Title: OpenWrt RPC client library
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Source: ubus-2012-12-15-bb856ad8a9a1e786494d01e34bbfe2b4d2134021.tar.gz
+Type: ipkg
+Description: OpenWrt RPC client library
+Felix Fietkau <nbd@openwrt.org>
+@@
+
+Package: libubus-lua
+Submenu: Libraries
+Version: 2012-12-15-bb856ad8a9a1e786494d01e34bbfe2b4d2134021
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libubus +liblua
+Menu-Depends: 
+Provides: 
+Section: luci2
+Category: LuCI2
+Title: Lua binding for the OpenWrt RPC client
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Source: ubus-2012-12-15-bb856ad8a9a1e786494d01e34bbfe2b4d2134021.tar.gz
+Type: ipkg
+Description: Lua binding for the OpenWrt RPC client
+Felix Fietkau <nbd@openwrt.org>
+@@
+
+

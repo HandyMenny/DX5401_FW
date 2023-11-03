@@ -1,0 +1,18 @@
+Source-Makefile: package/network/services/pcp-master/Makefile
+Package: pcp-master
+Version: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libjson +ZYXEL_SUPPORT_ZCFG:libzyutil +ZYXEL_SUPPORT_ZCFG:libzcfg_msg +ZYXEL_SUPPORT_ZCFG:libzcfg_fe_rdm_access +ZYXEL_SUPPORT_ZCFG:libzcfg_fe_rdm_string +ZYXEL_SUPPORT_ZCFG:libzcfg_fe_schema +ZYXEL_SUPPORT_ZCFG:libzcfg_fe_rdm_struct
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Base system
+Title: pcp-master is a PCP client library
+Maintainer: 
+Source: pcp-master.tar.bz2
+Type: ipkg
+Description: pcp-master is a PCP client library
+https://github.com/libpcp/pcp
+
+@@
+
+

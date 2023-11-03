@@ -1,0 +1,23 @@
+Source-Makefile: package/network/ipv6/6relayd/Makefile
+Package: 6relayd
+Version: 2012-12-27-09f0cf6d6c7fcae7393e4aeecabc3e204cd98366
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-ipv6
+Menu-Depends: 
+Provides: 
+Section: ipv6
+Category: IPv6
+Title: IPv6-Relay and Server (RD-, DHCPv6- & NDP-Proxy)
+Maintainer: Steven Barth <steven@midlink.org>
+Source: 6relayd-2012-12-27.tar.bz2
+Type: ipkg
+Description:  6relayd is an IPv6-tool that relays IPv6-management protocols like router
+ discovery, neighbor discovery and DHCPv6 so that clients on routed (non-
+ bridged) interfaces can use the public address prefix, DHCPv6 and DNS-service
+ of a master interface. This is useful to avoid NAT in chained IPv6-routers.
+
+ It can also be used as a lightweight router advertisement daemon and provide
+ stateless DHCPv6 service where size matters.
+Steven Barth <steven@midlink.org>
+@@
+
+

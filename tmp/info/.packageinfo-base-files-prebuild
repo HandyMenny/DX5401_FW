@@ -1,0 +1,18 @@
+Source-Makefile: package/base-files-prebuild/Makefile
+Package: base-files-prebuild
+Version: 0.2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Menu-Depends: 
+Provides: 
+Build-Depends: opkg/host
+Section: release
+Category: Zyxel Packages
+Title: This is a release package
+Maintainer: 
+Source: 
+Type: ipkg
+Description: This is a release package
+
+@@
+
+

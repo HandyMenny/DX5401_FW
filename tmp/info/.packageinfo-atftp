@@ -1,0 +1,34 @@
+Source-Makefile: package/atftp/Makefile
+Package: atftp
+Submenu: File Transfer
+Version: 0.7.1-5
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libreadline +libncurses
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: TFTP client
+Maintainer: 
+Source: atftp-0.7.1.tar.gz
+Type: ipkg
+Description: TFTP client
+
+@@
+
+Package: atftpd
+Submenu: File Transfer
+Version: 0.7.1-5
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: TFTP server
+Maintainer: 
+Source: atftp-0.7.1.tar.gz
+Type: ipkg
+Description: TFTP server
+
+@@
+
+

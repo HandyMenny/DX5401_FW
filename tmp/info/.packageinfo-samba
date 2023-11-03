@@ -1,0 +1,20 @@
+Source-Makefile: package/samba/Makefile
+Package: samba
+Version: 3.0.37-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: samba - NetBIOS/SMB implementation
+Maintainer: 
+Source: samba-3.0.37.tar.gz
+Type: ipkg
+Description: 	The Samba software suite is a collection of programs that implements the
+	SMB protocol for unix systems, allowing you to serve files and printers to
+	Windows, NT, OS/2 and DOS clients. This protocol is sometimes also referred
+	to as the LanManager or Netbios protocol.
+
+@@
+
+

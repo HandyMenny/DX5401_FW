@@ -1,0 +1,18 @@
+Source-Makefile: package/public-zyxel/libzyutil/Makefile
+Package: libzyutil
+Version: 2.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ZYXEL_OPENWRT_19:libopenssl
+Menu-Depends: 
+Provides: 
+Build-Depends: zcfg ZYXEL_OPENWRT_14:libjson !ZYXEL_OPENWRT_14:libjson-c libopenssl libzlog libzos libzcfg_msg
+Section: net
+Category: Zyxel Packages
+Title: ZyXEL Configuration Management Utility Library
+Maintainer: 
+Source: libzyutil-2.0.tar.gz
+Type: ipkg
+Description: ZyXEL Configuration Management Utility Library
+
+@@
+
+

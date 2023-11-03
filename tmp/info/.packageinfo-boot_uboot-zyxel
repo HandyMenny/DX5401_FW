@@ -1,0 +1,22 @@
+Source-Makefile: package/boot/uboot-zyxel/Makefile
+Package: uboot-zyxel
+Menu: 1
+Version: 2009.11-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Menu-Depends: 
+Provides: 
+Section: boot
+Category: Boot Loaders
+Title: U-Boot for ZyXEL reference boards
+Maintainer: 
+Source: u-boot-2009.11.tar.bz2
+Type: bin
+Description: U-Boot for ZyXEL reference boards
+http://www.denx.de/wiki/U-Boot
+
+@@
+Config:
+	source "package/boot/uboot-zyxel/Config.in"
+@@
+
+

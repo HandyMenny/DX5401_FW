@@ -1,0 +1,20 @@
+Source-Makefile: package/share_open/rport/Makefile
+Package: rport
+Version: 0.8.2-0
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +uuidgen
+Menu-Depends: 
+Provides: 
+Section: admin
+Category: Administration
+Title: Remote Management (RMM) Software
+Maintainer: 
+Source: 0.8.2.tar.gz
+Type: ipkg
+Description: 	Rport helps you to manage your remote servers without the hassle of VPNs,
+	chained SSH connections, jump-hosts, or the use of commercial tools like
+	TeamViewer and its clones.
+https://github.com/cloudradar-monitoring/rport
+
+@@
+
+

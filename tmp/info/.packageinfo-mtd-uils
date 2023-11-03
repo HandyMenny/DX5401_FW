@@ -1,0 +1,308 @@
+Source-Makefile: package/mtd-uils/Makefile
+Package: mtd-utils
+Menu: 1
+Version: 2.0.2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Menu-Depends: 
+Provides: 
+Build-Depends: util-linux zlib
+Section: utils
+Category: Utilities
+Title: Utilities for flash info/debug
+Maintainer: 
+Source: mtd-utils-2.0.2.tar.gz
+Type: ipkg
+Description:   Utilities for manipulating memory technology devices.
+
+@@
+
+Package: mtd-utils-ubiattach
+Version: 2.0.2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mtd-utils +zlib +libuuid
+Menu-Depends: 
+Provides: 
+Build-Depends: util-linux zlib
+Section: utils
+Category: Utilities
+Title: MTD ubiattach
+Maintainer: 
+Source: mtd-utils-2.0.2.tar.gz
+Type: ipkg
+Description: MTD ubiattach
+http://www.linux-mtd.infradead.org/
+
+@@
+
+Package: mtd-utils-ubicrc32
+Version: 2.0.2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mtd-utils +zlib +libuuid
+Menu-Depends: 
+Provides: 
+Build-Depends: util-linux zlib
+Section: utils
+Category: Utilities
+Title: MTD ubicrc32
+Maintainer: 
+Source: mtd-utils-2.0.2.tar.gz
+Type: ipkg
+Description: MTD ubicrc32
+http://www.linux-mtd.infradead.org/
+
+@@
+
+Package: mtd-utils-ubiblock
+Version: 2.0.2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mtd-utils +zlib +libuuid
+Menu-Depends: 
+Provides: 
+Build-Depends: util-linux zlib
+Section: utils
+Category: Utilities
+Title: MTD ubiblock
+Maintainer: 
+Source: mtd-utils-2.0.2.tar.gz
+Type: ipkg
+Description: MTD ubiblock
+http://www.linux-mtd.infradead.org/
+
+@@
+
+Package: mtd-utils-ubidetach
+Version: 2.0.2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mtd-utils +zlib +libuuid
+Menu-Depends: 
+Provides: 
+Build-Depends: util-linux zlib
+Section: utils
+Category: Utilities
+Title: MTD ubidetach
+Maintainer: 
+Source: mtd-utils-2.0.2.tar.gz
+Type: ipkg
+Description: MTD ubidetach
+http://www.linux-mtd.infradead.org/
+
+@@
+
+Package: mtd-utils-ubiformat
+Version: 2.0.2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mtd-utils +zlib +libuuid
+Menu-Depends: 
+Provides: 
+Build-Depends: util-linux zlib
+Section: utils
+Category: Utilities
+Title: MTD ubiformat
+Maintainer: 
+Source: mtd-utils-2.0.2.tar.gz
+Type: ipkg
+Description: MTD ubiformat
+http://www.linux-mtd.infradead.org/
+
+@@
+
+Package: mtd-utils-ubimkvol
+Version: 2.0.2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mtd-utils +zlib +libuuid
+Menu-Depends: 
+Provides: 
+Build-Depends: util-linux zlib
+Section: utils
+Category: Utilities
+Title: MTD ubimkvol
+Maintainer: 
+Source: mtd-utils-2.0.2.tar.gz
+Type: ipkg
+Description: MTD ubimkvol
+http://www.linux-mtd.infradead.org/
+
+@@
+
+Package: mtd-utils-ubinfo
+Version: 2.0.2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mtd-utils +zlib +libuuid
+Menu-Depends: 
+Provides: 
+Build-Depends: util-linux zlib
+Section: utils
+Category: Utilities
+Title: MTD ubinfo
+Maintainer: 
+Source: mtd-utils-2.0.2.tar.gz
+Type: ipkg
+Description: MTD ubinfo
+http://www.linux-mtd.infradead.org/
+
+@@
+
+Package: mtd-utils-ubinize
+Version: 2.0.2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mtd-utils +zlib +libuuid
+Menu-Depends: 
+Provides: 
+Build-Depends: util-linux zlib
+Section: utils
+Category: Utilities
+Title: MTD ubinize
+Maintainer: 
+Source: mtd-utils-2.0.2.tar.gz
+Type: ipkg
+Description: MTD ubinize
+http://www.linux-mtd.infradead.org/
+
+@@
+
+Package: mtd-utils-ubirename
+Version: 2.0.2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mtd-utils +zlib +libuuid
+Menu-Depends: 
+Provides: 
+Build-Depends: util-linux zlib
+Section: utils
+Category: Utilities
+Title: MTD ubirename
+Maintainer: 
+Source: mtd-utils-2.0.2.tar.gz
+Type: ipkg
+Description: MTD ubirename
+http://www.linux-mtd.infradead.org/
+
+@@
+
+Package: mtd-utils-ubirmvol
+Version: 2.0.2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mtd-utils +zlib +libuuid
+Menu-Depends: 
+Provides: 
+Build-Depends: util-linux zlib
+Section: utils
+Category: Utilities
+Title: MTD ubirmvol
+Maintainer: 
+Source: mtd-utils-2.0.2.tar.gz
+Type: ipkg
+Description: MTD ubirmvol
+http://www.linux-mtd.infradead.org/
+
+@@
+
+Package: mtd-utils-ubirsvol
+Version: 2.0.2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mtd-utils +zlib +libuuid
+Menu-Depends: 
+Provides: 
+Build-Depends: util-linux zlib
+Section: utils
+Category: Utilities
+Title: MTD ubirsvol
+Maintainer: 
+Source: mtd-utils-2.0.2.tar.gz
+Type: ipkg
+Description: MTD ubirsvol
+http://www.linux-mtd.infradead.org/
+
+@@
+
+Package: mtd-utils-ubiupdatevol
+Version: 2.0.2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mtd-utils +zlib +libuuid
+Menu-Depends: 
+Provides: 
+Build-Depends: util-linux zlib
+Section: utils
+Category: Utilities
+Title: MTD ubiupdatevol
+Maintainer: 
+Source: mtd-utils-2.0.2.tar.gz
+Type: ipkg
+Description: MTD ubiupdatevol
+http://www.linux-mtd.infradead.org/
+
+@@
+
+Package: mtd-utils-flash-erase
+Version: 2.0.2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mtd-utils +zlib +libuuid
+Menu-Depends: 
+Provides: 
+Build-Depends: util-linux zlib
+Section: utils
+Category: Utilities
+Title: MTD flash_erase
+Maintainer: 
+Source: mtd-utils-2.0.2.tar.gz
+Type: ipkg
+Description: MTD flash_erase
+http://www.linux-mtd.infradead.org/
+
+@@
+
+Package: mtd-utils-nanddump
+Version: 2.0.2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mtd-utils +zlib +libuuid
+Menu-Depends: 
+Provides: 
+Build-Depends: util-linux zlib
+Section: utils
+Category: Utilities
+Title: MTD nanddump
+Maintainer: 
+Source: mtd-utils-2.0.2.tar.gz
+Type: ipkg
+Description: MTD nanddump
+http://www.linux-mtd.infradead.org/
+
+@@
+
+Package: mtd-utils-nandwrite
+Version: 2.0.2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mtd-utils +zlib +libuuid
+Menu-Depends: 
+Provides: 
+Build-Depends: util-linux zlib
+Section: utils
+Category: Utilities
+Title: MTD nandwrite
+Maintainer: 
+Source: mtd-utils-2.0.2.tar.gz
+Type: ipkg
+Description: MTD nandwrite
+http://www.linux-mtd.infradead.org/
+
+@@
+
+Package: mtd-utils-nandtest
+Version: 2.0.2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mtd-utils +zlib +libuuid
+Menu-Depends: 
+Provides: 
+Build-Depends: util-linux zlib
+Section: utils
+Category: Utilities
+Title: MTD nandtest
+Maintainer: 
+Source: mtd-utils-2.0.2.tar.gz
+Type: ipkg
+Description: MTD nandtest
+http://www.linux-mtd.infradead.org/
+
+@@
+
+Package: mtd-utils-mtdinfo
+Version: 2.0.2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread mtd-utils +zlib +libuuid
+Menu-Depends: 
+Provides: 
+Build-Depends: util-linux zlib
+Section: utils
+Category: Utilities
+Title: MTD mtdinfo
+Maintainer: 
+Source: mtd-utils-2.0.2.tar.gz
+Type: ipkg
+Description: MTD mtdinfo
+http://www.linux-mtd.infradead.org/
+
+@@
+
+

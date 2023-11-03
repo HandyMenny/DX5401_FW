@@ -1,0 +1,20 @@
+Source-Makefile: package/network/ipv6/6distributed/Makefile
+Package: 6distributed
+Version: 2012-12-28-20784e586f7f18a791d7fc0fce20ef125e504849
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-ipv6 +libubus +libubox
+Menu-Depends: 
+Provides: 
+Section: ipv6
+Category: IPv6
+Title: IPv6 host prefix distribution daemon
+Maintainer: Steven Barth <steven@midlink.org>
+Source: 6distributed-2012-12-28.tar.bz2
+Type: ipkg
+Description:  6distributed is a daemon that distributes IPv6 prefixes locally across
+ downstream interfaces. It supports valid and preferred lifetimes and
+ delayed allocation so that an already acquired prefix can be distributed
+ on interfaces that come up later.
+Steven Barth <steven@midlink.org>
+@@
+
+

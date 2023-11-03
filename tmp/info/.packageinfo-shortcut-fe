@@ -1,0 +1,35 @@
+Source-Makefile: package/shortcut-fe/Makefile
+Package: kmod-shortcut-fe
+Submenu: Network Support
+Version: <LINUX_VERSION>+g2eeabf3-1
+Depends: 
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Kernel driver for SFE
+Maintainer: 
+Source: shortcut-fe-g2eeabf3.tar.gz
+Type: ipkg
+Description: Kernel driver for SFE
+
+@@
+
+Package: kmod-shortcut-fe-cm
+Submenu: Network Support
+Version: <LINUX_VERSION>+g2eeabf3-1
+Depends: +kmod-shortcut-fe
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Kernel driver for SFE
+Maintainer: 
+Source: shortcut-fe-g2eeabf3.tar.gz
+Type: ipkg
+Kernel-Config: CONFIG_NF_CONNTRACK_EVENTS=y
+Description: Kernel driver for SFE
+
+@@
+
+

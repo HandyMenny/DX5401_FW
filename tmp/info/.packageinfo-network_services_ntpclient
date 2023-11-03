@@ -1,0 +1,17 @@
+Source-Makefile: package/network/services/ntpclient/Makefile
+Package: ntpclient
+Version: 2007_365-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libzcfg_msg +librt +libzcfg_fe_rdm_access
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Base system
+Title: An NTP (RFC-1305) client for unix-alike computers
+Maintainer: 
+Source: ntpclient_2007_365.tar.gz
+Type: ipkg
+Description: An NTP (RFC-1305) client for unix-alike computers
+
+@@
+
+

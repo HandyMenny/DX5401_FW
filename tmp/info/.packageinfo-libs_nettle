@@ -1,0 +1,17 @@
+Source-Makefile: package/libs/nettle/Makefile
+Package: nettle
+Version: 3.4.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: nettle library
+Maintainer: 
+Source: nettle-3.4.1.tar.gz
+Type: ipkg
+Description: nettle library
+
+@@
+
+

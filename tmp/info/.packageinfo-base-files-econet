@@ -1,0 +1,18 @@
+Source-Makefile: package/base-files-econet/Makefile
+Package: base-files-econet
+Version: 1-unknown
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Menu-Depends: 
+Provides: 
+Build-Depends: opkg/host
+Section: base
+Category: Base system
+Title: Base filesystem for Econdet SDK
+Maintainer: 
+Source: 
+Type: ipkg
+Description:  This package contains a base filesystem and system scripts.
+
+@@
+
+

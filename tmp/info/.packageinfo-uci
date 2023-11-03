@@ -1,0 +1,47 @@
+Source-Makefile: package/uci/Makefile
+Package: uci
+Version: 2012-11-09.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libuci
+Menu-Depends: 
+Provides: 
+Section: base
+Category: Base system
+Title: Utility for the Unified Configuration Interface (UCI)
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Source: uci-2012-11-09.1.tar.gz
+Type: ipkg
+Description: Utility for the Unified Configuration Interface (UCI)
+Felix Fietkau <nbd@openwrt.org>
+@@
+
+Package: libuci
+Version: 2012-11-09.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: C library for the Unified Configuration Interface (UCI)
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Source: uci-2012-11-09.1.tar.gz
+Type: ipkg
+Description: C library for the Unified Configuration Interface (UCI)
+Felix Fietkau <nbd@openwrt.org>
+@@
+
+Package: libuci-lua
+Version: 2012-11-09.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libuci +liblua
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Lua plugin for UCI
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Source: uci-2012-11-09.1.tar.gz
+Type: ipkg
+Description: Lua plugin for UCI
+Felix Fietkau <nbd@openwrt.org>
+@@
+
+

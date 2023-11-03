@@ -1,0 +1,24 @@
+Source-Makefile: package/network/services/udhcp/Makefile
+Package: udhcp
+Version: 0.9.8-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libzcfg_msg +libzcmd_tool +libzcfg_fe_rdm_access +libzcfg_fe_rdm_struct
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Base system
+Title: An embedded DHCP client and server
+Maintainer: 
+Source: udhcp-0.9.8.tar.gz
+Type: ipkg
+Description: An embedded DHCP client and server
+
+@@
+Config:
+	select PACKAGE_libzcfg_msg if PACKAGE_zcfg
+	select PACKAGE_libzcmd_tool if PACKAGE_zcfg
+	select PACKAGE_libjson if PACKAGE_zcfg
+	select PACKAGE_libzcfg_fe_rdm_access if PACKAGE_zcfg
+	select PACKAGE_libzcfg_fe_rdm_struct if PACKAGE_zcfg
+@@
+
+

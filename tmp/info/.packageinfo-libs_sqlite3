@@ -1,0 +1,45 @@
+Source-Makefile: package/libs/sqlite3/Makefile
+Package: libsqlite3
+Submenu: database
+Version: 3.6.23.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Menu-Depends: 
+Provides: 
+Build-Depends: libncurses libreadline libtool libintl libiconv
+Section: libs
+Category: Libraries
+Title: SQLite (v3.x) database engine (library)
+Maintainer: 
+Source: sqlite-3.6.23.1.tar.gz
+Type: ipkg
+Description:  SQLite is a small C library that implements a self-contained, embeddable,
+ zero-configuration SQL database engine.
+ This package contains the SQLite (v3.x) shared library, used by other
+ programs.
+http://www.sqlite.org/
+
+@@
+
+Package: sqlite3-cli
+Submenu: database
+Version: 3.6.23.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libsqlite3 +libncurses +libreadline
+Menu-Depends: 
+Provides: 
+Build-Depends: libncurses libreadline libtool libintl libiconv
+Section: utils
+Category: Utilities
+Title: SQLite (v3.x) database engine (cli)
+Maintainer: 
+Source: sqlite-3.6.23.1.tar.gz
+Type: ipkg
+Description:  SQLite is a small C library that implements a self-contained, embeddable,
+ zero-configuration SQL database engine.
+ This package contains a terminal-based front-end to the SQLite (v3.x) library
+ that can evaluate queries interactively and display the results in multiple
+ formats.
+http://www.sqlite.org/
+
+@@
+
+

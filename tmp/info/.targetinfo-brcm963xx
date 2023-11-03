@@ -1,0 +1,155 @@
+Source-Makefile: target/linux/brcm963xx/Makefile
+Target: brcm963xx
+Target-Board: brcm963xx
+Target-Name: Broadcom BCM963xx
+Target-Path: /home/handy/DX5401_fw
+Target-Arch: 
+Target-Arch-Packages: brcm963xx
+Target-Features: pci pcmcia usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -fno-caller-saves
+Linux-Version: 4.1.52
+Linux-Release: 1
+Linux-Kernel-Arch: 
+Target-Description:
+	Build firmware images for Broadcom based xDSL/routers
+	currently supports BCM63138, BCM63168, BCM63268 BCM63169 and BCM63269 based devices.
+@@
+Default-Packages: libc libgcc busybox dropbear mtd opkg 
+Target: brcm963xx/96858GWOV
+Target-Board: brcm963xx
+Target-Name: Broadcom BCM963xx
+Target-Path: target/linux/brcm963xx
+Target-Arch: 
+Target-Arch-Packages: brcm963xx
+Target-Features: pci pcmcia usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -fno-caller-saves
+Linux-Version: 4.1.52
+Linux-Release: 1
+Linux-Kernel-Arch: 
+Target-Description:
+	Build firmware images for Broadcom based xDSL/routers
+	currently supports BCM63138, BCM63168, BCM63268 BCM63169 and BCM63269 based devices.
+@@
+Default-Packages: libc libgcc busybox dropbear mtd opkg 
+Target: brcm963xx/96838GWOV
+Target-Board: brcm963xx
+Target-Name: Broadcom BCM963xx
+Target-Path: target/linux/brcm963xx
+Target-Arch: 
+Target-Arch-Packages: brcm963xx
+Target-Features: pci pcmcia usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -fno-caller-saves
+Linux-Version: 4.1.52
+Linux-Release: 1
+Linux-Kernel-Arch: 
+Target-Description:
+	Build firmware images for Broadcom based xDSL/routers
+	currently supports BCM63138, BCM63168, BCM63268 BCM63169 and BCM63269 based devices.
+@@
+Default-Packages: libc libgcc busybox dropbear mtd opkg 
+Target: brcm963xx/963158GW
+Target-Board: brcm963xx
+Target-Name: Broadcom BCM963xx
+Target-Path: target/linux/brcm963xx
+Target-Arch: 
+Target-Arch-Packages: brcm963xx
+Target-Features: pci pcmcia usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -fno-caller-saves
+Linux-Version: 4.1.52
+Linux-Release: 1
+Linux-Kernel-Arch: 
+Target-Description:
+	Build firmware images for Broadcom based xDSL/routers
+	currently supports BCM63138, BCM63168, BCM63268 BCM63169 and BCM63269 based devices.
+@@
+Default-Packages: libc libgcc busybox dropbear mtd opkg 
+Target: brcm963xx/963138ref
+Target-Board: brcm963xx
+Target-Name: Broadcom BCM963xx
+Target-Path: target/linux/brcm963xx
+Target-Arch: 
+Target-Arch-Packages: brcm963xx
+Target-Features: pci pcmcia usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -fno-caller-saves
+Linux-Version: 4.1.52
+Linux-Release: 1
+Linux-Kernel-Arch: 
+Target-Description:
+	Build firmware images for Broadcom based xDSL/routers
+	currently supports BCM63138, BCM63168, BCM63268 BCM63169 and BCM63269 based devices.
+@@
+Default-Packages: libc libgcc busybox dropbear mtd opkg 
+Target: brcm963xx/963269bhr
+Target-Board: brcm963xx
+Target-Name: Broadcom BCM963xx
+Target-Path: target/linux/brcm963xx
+Target-Arch: 
+Target-Arch-Packages: brcm963xx
+Target-Features: pci pcmcia usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -fno-caller-saves
+Linux-Version: 4.1.52
+Linux-Release: 1
+Linux-Kernel-Arch: 
+Target-Description:
+	Build firmware images for Broadcom based xDSL/routers
+	currently supports BCM63138, BCM63168, BCM63268 BCM63169 and BCM63269 based devices.
+@@
+Default-Packages: libc libgcc busybox dropbear mtd opkg 
+Target: brcm963xx/963178GWV
+Target-Board: brcm963xx
+Target-Name: Broadcom BCM963xx
+Target-Path: target/linux/brcm963xx
+Target-Arch: 
+Target-Arch-Packages: brcm963xx
+Target-Features: pci pcmcia usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -fno-caller-saves
+Linux-Version: 4.1.52
+Linux-Release: 1
+Linux-Kernel-Arch: 
+Target-Description:
+	Build firmware images for Broadcom based xDSL/routers
+	currently supports BCM63138, BCM63168, BCM63268 BCM63169 and BCM63269 based devices.
+@@
+Default-Packages: libc libgcc busybox dropbear mtd opkg 
+Target: brcm963xx/962118GWV
+Target-Board: brcm963xx
+Target-Name: Broadcom BCM963xx
+Target-Path: target/linux/brcm963xx
+Target-Arch: 
+Target-Arch-Packages: brcm963xx
+Target-Features: pci pcmcia usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -fno-caller-saves
+Linux-Version: 4.1.52
+Linux-Release: 1
+Linux-Kernel-Arch: 
+Target-Description:
+	Build firmware images for Broadcom based xDSL/routers
+	currently supports BCM63138, BCM63168, BCM63268 BCM63169 and BCM63269 based devices.
+@@
+Default-Packages: libc libgcc busybox dropbear mtd opkg 
+Target: brcm963xx/dx5401_b0
+Target-Board: brcm963xx
+Target-Name: DX5401_B0
+Target-Path: target/linux/brcm963xx
+Target-Arch: arm
+Target-Arch-Packages: brcm963xx
+Target-Features: pci pcmcia usb
+Target-Depends: 
+Target-Optimization: -Os -pipe -march=armv5te -mtune=xscale -fno-caller-saves
+Linux-Version: 4.1.52
+Linux-Release: 1
+Linux-Kernel-Arch: arm
+Target-Description:
+	Build firmware images for Broadcom based xDSL/routers
+	currently supports BCM63138, BCM63168, BCM63268 BCM63169 and BCM63269 based devices.
+@@
+Default-Packages: libc libgcc busybox dropbear mtd opkg 
+

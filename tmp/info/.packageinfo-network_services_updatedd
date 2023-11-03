@@ -1,0 +1,17 @@
+Source-Makefile: package/network/services/updatedd/Makefile
+Package: updatedd
+Version: 2.6-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libresolv
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Base system
+Title: A client to update a dynamic DNS
+Maintainer: 
+Source: updatedd-2.6.tar.gz
+Type: ipkg
+Description: A client to update a dynamic DNS
+
+@@
+
+

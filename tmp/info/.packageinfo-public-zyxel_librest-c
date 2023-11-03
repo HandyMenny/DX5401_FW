@@ -1,0 +1,23 @@
+Source-Makefile: package/public-zyxel/librest-c/Makefile
+Package: librest-c
+Version: 2.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +zcfg +curl +libjson-c
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: ZyXEL Packages
+Title: ZyXEL Configuration Debugging library
+Maintainer: 
+Source: 
+Type: ipkg
+Description: ZyXEL Configuration Debugging library
+
+@@
+Config:
+	config ZYXEL_LIB_RESTFUL_API
+		bool "librest-c support"
+		depends on PACKAGE_librest-c
+		default y
+@@
+
+

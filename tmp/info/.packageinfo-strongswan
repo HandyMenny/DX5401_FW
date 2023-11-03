@@ -1,0 +1,18 @@
+Source-Makefile: package/strongswan/Makefile
+Package: strongswan
+Version: 5.5.2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
+Menu-Depends: 
+Provides: 
+Section: security
+Category: VPN
+Title: IPSec VPN strongswan Daemon
+Maintainer: 
+Source: strongswan-5.5.2.tar.bz2
+Type: ipkg
+Description: IPSec VPN strongswan Daemon
+http://v6web.litech.org/radvd/
+
+@@
+
+

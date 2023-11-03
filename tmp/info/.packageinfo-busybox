@@ -1,0 +1,24 @@
+Source-Makefile: package/busybox/Makefile
+Package: busybox
+Menu: 1
+Version: 1_20_1-5
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +BUSYBOX_CONFIG_FEATURE_HAVE_RPC:librpc
+Menu-Depends: 
+Provides: 
+Build-Depends: BUSYBOX_CONFIG_FEATURE_HAVE_RPC:librpc PACKAGE_zcmd:zcfg PACKAGE_zcmd:libzcfg_msg PACKAGE_zcmd:libjson PACKAGE_zcmd:libzcfg_fe_rdm_access PACKAGE_zcmd:libzcmd_tool PACKAGE_zcmd:libzcfg_fe_rdm_struct PACKAGE_zcmd:libzyutil
+Section: base
+Category: Base system
+Title: Core utilities for embedded Linux
+Maintainer: Nicolas Thill <nico@openwrt.org>
+Source: busybox-1_20_1.tar.gz
+Type: ipkg
+Description:  The Swiss Army Knife of embedded Linux.
+ It slices, it dices, it makes Julian Fries.
+http://busybox.net/
+Nicolas Thill <nico@openwrt.org>
+@@
+Config:
+	source "package/busybox/Config.in"
+@@
+
+

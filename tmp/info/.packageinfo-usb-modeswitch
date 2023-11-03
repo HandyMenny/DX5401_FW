@@ -1,0 +1,17 @@
+Source-Makefile: package/usb-modeswitch/Makefile
+Package: usb-modeswitch
+Version: 2.1.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libusb-1.0
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: USB ModeSwitch
+Maintainer: 
+Source: usb-modeswitch-2.1.0.tar.bz2
+Type: ipkg
+Description: 	A mode switching tool for controlling "flip flop" (multiple device) USB gear.
+
+@@
+
+

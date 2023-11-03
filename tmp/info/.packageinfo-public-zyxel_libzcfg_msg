@@ -1,0 +1,17 @@
+Source-Makefile: package/public-zyxel/libzcfg_msg/Makefile
+Package: libzcfg_msg
+Version: 2.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libzlog +libzos
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Zyxel public package
+Title: IPC of processes
+Maintainer: 
+Source: 
+Type: ipkg
+Description: IPC of processes
+
+@@
+
+

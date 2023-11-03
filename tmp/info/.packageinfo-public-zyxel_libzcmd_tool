@@ -1,0 +1,22 @@
+Source-Makefile: package/public-zyxel/libzcmd_tool/Makefile
+Package: libzcmd_tool
+Version: 2.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libzos +libjson-c
+Menu-Depends: 
+Provides: 
+Build-Depends: zcfg
+Section: net
+Category: Zyxel Packages
+Title: ZyXEL Configuration Management Daemon Tool
+Maintainer: 
+Source: libzcmd_tool-2.0.tar.gz
+Type: ipkg
+Description: ZyXEL Configuration Management Daemon Tool
+
+@@
+Config:
+	select PACKAGE_libjson-c if PACKAGE_zcfg
+	select PACKAGE_libzos if PACKAGE_zcfg
+@@
+
+

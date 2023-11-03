@@ -1,0 +1,22 @@
+Source-Makefile: package/network/services/ntfs-3g/Makefile
+Package: ntfs-3g
+Submenu: Filesystem
+Version: 2013.1.13-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Stable Read/Write NTFS Driver
+Maintainer: 
+Source: ntfs-3g-2013.1.13.tgz
+Type: ipkg
+Description: 	Ntfs-3g is a NTFS driver, which can create, remove, rename,
+	move files, directories, hard links, and streams. It can read
+	and write files, including streams and sparse files. It can
+	handle special files like symbolic links, devices, and FIFOs.
+	Moreover it can also read transparently compressed files.
+
+@@
+
+

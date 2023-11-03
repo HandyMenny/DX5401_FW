@@ -1,0 +1,18 @@
+Source-Makefile: package/ramips/base-files-ramips/Makefile
+Package: base-files-ramips
+Version: 1-unknown
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Menu-Depends: 
+Provides: 
+Build-Depends: opkg/host
+Section: base
+Category: Base system
+Title: Base filesystem for MTK ramips platform
+Maintainer: 
+Source: 
+Type: ipkg
+Description:  This package contains a base filesystem and system scripts.
+
+@@
+
+

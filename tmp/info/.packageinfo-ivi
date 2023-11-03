@@ -1,0 +1,19 @@
+Source-Makefile: package/ivi/Makefile
+Package: kmod-ivi
+Submenu: MAP-T/MAP-E with IVI
+Version: <LINUX_VERSION>-1.0
+Depends: @IPV6&&TARGET_en75xx +libc
+Menu-Depends: 
+Provides: 
+Section: ipv6
+Category: IPv6
+Title: IVI Kernel Module
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   IVI Module is built for ivictl(IPv6 MAP).
+https://github.com/dpino/MAP/tree/hlist_for_each
+
+@@
+
+

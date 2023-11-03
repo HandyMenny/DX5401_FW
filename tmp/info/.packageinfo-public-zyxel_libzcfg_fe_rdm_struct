@@ -1,0 +1,18 @@
+Source-Makefile: package/public-zyxel/libzcfg_fe_rdm_struct/Makefile
+Package: libzcfg_fe_rdm_struct
+Version: 2.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Menu-Depends: 
+Provides: 
+Build-Depends: libzcfg_fe_rdm_access libzcmd_tool libzcfg_msg
+Section: net
+Category: Zyxel Packages
+Title: ZyXEL Configuration Management Frontend Data Model Access Library By Using Structure
+Maintainer: 
+Source: libzcfg_fe_rdm_struct-2.0.tar.gz
+Type: ipkg
+Description: ZyXEL Configuration Management Frontend Data Model Access Library By Using Structure
+
+@@
+
+

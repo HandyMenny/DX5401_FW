@@ -1,0 +1,25 @@
+Source-Makefile: package/libs/matrixssl/Makefile
+Package: libmatrixssl
+Submenu: SSL
+Version: 1-8-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Embedded SSL implementation
+Maintainer: 
+Source: matrixssl-1-8-open.tar.gz
+Type: ipkg
+Description: Embedded SSL implementation
+http://www.matrixssl.org/
+
+@@
+Config:
+        config MATRIXSSL_SUPPORT_ECONET_SDK
+                bool "support Econet SDK"
+                depends on PACKAGE_libmatrixssl
+                default n
+@@
+
+

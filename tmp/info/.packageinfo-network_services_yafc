@@ -1,0 +1,18 @@
+Source-Makefile: package/network/services/yafc/Makefile
+Package: yafc
+Version: 1.1.1-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses +libreadline
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Yafc is yet another ftp client.
+Maintainer: 
+Source: yafc-1.1.1.tar.bz2
+Type: ipkg
+Description: Yafc is yet another ftp client.
+http://yafc.sourceforge.net/
+
+@@
+
+

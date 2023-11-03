@@ -1,0 +1,17 @@
+Source-Makefile: package/network/utils/p0f/Makefile
+Package: p0f
+Version: 3.08b-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @ZYXEL_ONECONNECT +libpcap +SSP_SUPPORT:libssp
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Passive OS Fingerprinting
+Maintainer: 
+Source: p0f-3.08b.tgz
+Type: ipkg
+Description: 	p0f is a versatile passive OS fingerprinting tool.
+
+@@
+
+

@@ -1,0 +1,262 @@
+choice
+	prompt "Target System"
+	default TARGET_ar71xx
+	reset if !DEVEL
+	
+config TARGET_brcm963xx
+	bool "Broadcom BCM963xx"
+	select HAS_SUBTARGETS
+	help
+	  Build firmware images for Broadcom based xDSL/routers
+	  currently supports BCM63138, BCM63168, BCM63268 BCM63169 and BCM63269 based devices.
+
+
+endchoice
+
+choice
+	prompt "Subtarget" if HAS_SUBTARGETS
+
+config TARGET_brcm963xx_96858GWOV
+	bool "Broadcom BCM963xx"
+	select LINUX_4_1
+	depends on TARGET_brcm963xx
+	select PCI_SUPPORT
+	select PCMCIA_SUPPORT
+	select USB_SUPPORT
+	help
+	  Build firmware images for Broadcom based xDSL/routers
+	  currently supports BCM63138, BCM63168, BCM63268 BCM63169 and BCM63269 based devices.
+
+
+config TARGET_brcm963xx_96838GWOV
+	bool "Broadcom BCM963xx"
+	select LINUX_4_1
+	depends on TARGET_brcm963xx
+	select PCI_SUPPORT
+	select PCMCIA_SUPPORT
+	select USB_SUPPORT
+	help
+	  Build firmware images for Broadcom based xDSL/routers
+	  currently supports BCM63138, BCM63168, BCM63268 BCM63169 and BCM63269 based devices.
+
+
+config TARGET_brcm963xx_963158GW
+	bool "Broadcom BCM963xx"
+	select LINUX_4_1
+	depends on TARGET_brcm963xx
+	select PCI_SUPPORT
+	select PCMCIA_SUPPORT
+	select USB_SUPPORT
+	help
+	  Build firmware images for Broadcom based xDSL/routers
+	  currently supports BCM63138, BCM63168, BCM63268 BCM63169 and BCM63269 based devices.
+
+
+config TARGET_brcm963xx_963138ref
+	bool "Broadcom BCM963xx"
+	select LINUX_4_1
+	depends on TARGET_brcm963xx
+	select PCI_SUPPORT
+	select PCMCIA_SUPPORT
+	select USB_SUPPORT
+	help
+	  Build firmware images for Broadcom based xDSL/routers
+	  currently supports BCM63138, BCM63168, BCM63268 BCM63169 and BCM63269 based devices.
+
+
+config TARGET_brcm963xx_963269bhr
+	bool "Broadcom BCM963xx"
+	select LINUX_4_1
+	depends on TARGET_brcm963xx
+	select PCI_SUPPORT
+	select PCMCIA_SUPPORT
+	select USB_SUPPORT
+	help
+	  Build firmware images for Broadcom based xDSL/routers
+	  currently supports BCM63138, BCM63168, BCM63268 BCM63169 and BCM63269 based devices.
+
+
+config TARGET_brcm963xx_963178GWV
+	bool "Broadcom BCM963xx"
+	select LINUX_4_1
+	depends on TARGET_brcm963xx
+	select PCI_SUPPORT
+	select PCMCIA_SUPPORT
+	select USB_SUPPORT
+	help
+	  Build firmware images for Broadcom based xDSL/routers
+	  currently supports BCM63138, BCM63168, BCM63268 BCM63169 and BCM63269 based devices.
+
+
+config TARGET_brcm963xx_962118GWV
+	bool "Broadcom BCM963xx"
+	select LINUX_4_1
+	depends on TARGET_brcm963xx
+	select PCI_SUPPORT
+	select PCMCIA_SUPPORT
+	select USB_SUPPORT
+	help
+	  Build firmware images for Broadcom based xDSL/routers
+	  currently supports BCM63138, BCM63168, BCM63268 BCM63169 and BCM63269 based devices.
+
+
+config TARGET_brcm963xx_dx5401_b0
+	bool "DX5401_B0"
+	select LINUX_4_1
+	depends on TARGET_brcm963xx
+	select PCI_SUPPORT
+	select PCMCIA_SUPPORT
+	select USB_SUPPORT
+	select arm
+	help
+	  Build firmware images for Broadcom based xDSL/routers
+	  currently supports BCM63138, BCM63168, BCM63268 BCM63169 and BCM63269 based devices.
+
+
+endchoice
+
+choice
+	prompt "Target Profile"
+
+config TARGET_brcm963xx_96858GWOV_Default
+	bool "Default"
+	depends on TARGET_brcm963xx_96858GWOV
+
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_mtd
+	select DEFAULT_opkg
+
+config TARGET_brcm963xx_96838GWOV_Default
+	bool "Default"
+	depends on TARGET_brcm963xx_96838GWOV
+
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_mtd
+	select DEFAULT_opkg
+
+config TARGET_brcm963xx_963158GW_Default
+	bool "Default"
+	depends on TARGET_brcm963xx_963158GW
+
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_mtd
+	select DEFAULT_opkg
+
+config TARGET_brcm963xx_963138ref_Default
+	bool "Default"
+	depends on TARGET_brcm963xx_963138ref
+
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_mtd
+	select DEFAULT_opkg
+
+config TARGET_brcm963xx_963269bhr_Default
+	bool "Default"
+	depends on TARGET_brcm963xx_963269bhr
+
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_mtd
+	select DEFAULT_opkg
+
+config TARGET_brcm963xx_963178GWV_Default
+	bool "Default"
+	depends on TARGET_brcm963xx_963178GWV
+
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_mtd
+	select DEFAULT_opkg
+
+config TARGET_brcm963xx_962118GWV_Default
+	bool "Default"
+	depends on TARGET_brcm963xx_962118GWV
+
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_mtd
+	select DEFAULT_opkg
+
+config TARGET_brcm963xx_dx5401_b0_Default
+	bool "Default"
+	depends on TARGET_brcm963xx_dx5401_b0
+
+	select DEFAULT_busybox
+	select DEFAULT_dropbear
+	select DEFAULT_libc
+	select DEFAULT_libgcc
+	select DEFAULT_mtd
+	select DEFAULT_opkg
+
+endchoice
+
+config HAS_SUBTARGETS
+	bool
+
+config TARGET_BOARD
+	string
+
+		default "brcm963xx" if TARGET_brcm963xx
+config TARGET_ARCH_PACKAGES
+	string
+	
+		default "brcm963xx" if TARGET_brcm963xx_96858GWOV
+		default "brcm963xx" if TARGET_brcm963xx_96838GWOV
+		default "brcm963xx" if TARGET_brcm963xx_963158GW
+		default "brcm963xx" if TARGET_brcm963xx_963138ref
+		default "brcm963xx" if TARGET_brcm963xx_963269bhr
+		default "brcm963xx" if TARGET_brcm963xx_963178GWV
+		default "brcm963xx" if TARGET_brcm963xx_962118GWV
+		default "brcm963xx" if TARGET_brcm963xx_dx5401_b0
+
+config DEFAULT_TARGET_OPTIMIZATION
+	string
+	default "-Os -pipe -fno-caller-saves" if TARGET_brcm963xx_96858GWOV
+	default "-Os -pipe -fno-caller-saves" if TARGET_brcm963xx_96838GWOV
+	default "-Os -pipe -fno-caller-saves" if TARGET_brcm963xx_963158GW
+	default "-Os -pipe -fno-caller-saves" if TARGET_brcm963xx_963138ref
+	default "-Os -pipe -fno-caller-saves" if TARGET_brcm963xx_963269bhr
+	default "-Os -pipe -fno-caller-saves" if TARGET_brcm963xx_963178GWV
+	default "-Os -pipe -fno-caller-saves" if TARGET_brcm963xx_962118GWV
+	default "-Os -pipe -march=armv5te -mtune=xscale -fno-caller-saves" if TARGET_brcm963xx_dx5401_b0
+	default "-Os -pipe -funit-at-a-time"
+
+config LINUX_4_1
+	bool
+
+	config DEFAULT_busybox
+		bool
+
+	config DEFAULT_dropbear
+		bool
+
+	config DEFAULT_libc
+		bool
+
+	config DEFAULT_libgcc
+		bool
+
+	config DEFAULT_mtd
+		bool
+
+	config DEFAULT_opkg
+		bool
+

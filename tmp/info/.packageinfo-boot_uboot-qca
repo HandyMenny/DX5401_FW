@@ -1,0 +1,206 @@
+Source-Makefile: package/boot/uboot-qca/Makefile
+Package: uboot-2016-ipq807x
+Version: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ipq806x||TARGET_ipq807x||TARGET_ipq
+Menu-Depends: 
+Provides: 
+Build-Variant: ipq807x
+Section: boot
+Category: Boot Loaders
+Title: U-boot for IPQ807x based platforms
+Maintainer: 
+Source: 
+Type: ipkg
+Description: U-boot for IPQ807x based platforms
+http://www.denx.de/wiki/U-Boot
+
+@@
+
+Package: uboot-2016-ipq40xx
+Version: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ipq806x||TARGET_ipq
+Menu-Depends: 
+Provides: 
+Build-Variant: ipq40xx
+Section: boot
+Category: Boot Loaders
+Title: U-boot for IPQ40xx based platforms
+Maintainer: 
+Source: 
+Type: ipkg
+Description: U-boot for IPQ40xx based platforms
+http://www.denx.de/wiki/U-Boot
+
+@@
+
+Package: uboot-2016-ipq40xx_standard
+Version: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ipq806x||TARGET_ipq
+Menu-Depends: 
+Provides: 
+Build-Variant: ipq40xx_standard
+Section: boot
+Category: Boot Loaders
+Title: U-boot(Standard Variant) for IPQ40xx based platforms
+Maintainer: 
+Source: 
+Type: ipkg
+Description: U-boot(Standard Variant) for IPQ40xx based platforms
+http://www.denx.de/wiki/U-Boot
+
+@@
+
+Package: uboot-2016-ipq806x
+Version: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ipq806x||TARGET_ipq
+Menu-Depends: 
+Provides: 
+Build-Variant: ipq806x
+Section: boot
+Category: Boot Loaders
+Title: U-boot for IPQ806x based platforms
+Maintainer: 
+Source: 
+Type: ipkg
+Description: U-boot for IPQ806x based platforms
+http://www.denx.de/wiki/U-Boot
+
+@@
+
+Package: uboot-2016-ipq806x_standard
+Version: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ipq806x||TARGET_ipq
+Menu-Depends: 
+Provides: 
+Build-Variant: ipq806x_standard
+Section: boot
+Category: Boot Loaders
+Title: U-boot(Standard Variant) for IPQ806x based platforms
+Maintainer: 
+Source: 
+Type: ipkg
+Description: U-boot(Standard Variant) for IPQ806x based platforms
+http://www.denx.de/wiki/U-Boot
+
+@@
+
+Package: uboot-2016-ar71xx-ap147-8M
+Version: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ar71xx
+Menu-Depends: 
+Provides: 
+Build-Variant: ap147-8M-qca953x
+Section: boot
+Category: Boot Loaders
+Title: U-boot for ap147-8M platform
+Maintainer: 
+Source: 
+Type: ipkg
+Description: U-boot for ap147-8M platform
+http://www.denx.de/wiki/U-Boot
+
+@@
+
+Package: uboot-2016-ar71xx-ap147-16M
+Version: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ar71xx
+Menu-Depends: 
+Provides: 
+Build-Variant: ap147-16M-qca953x
+Section: boot
+Category: Boot Loaders
+Title: U-boot for ap147-16M platform
+Maintainer: 
+Source: 
+Type: ipkg
+Description: U-boot for ap147-16M platform
+http://www.denx.de/wiki/U-Boot
+
+@@
+
+Package: uboot-2016-ar71xx-ap135
+Version: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ar71xx
+Menu-Depends: 
+Provides: 
+Build-Variant: ap135-qca955x
+Section: boot
+Category: Boot Loaders
+Title: U-boot for ap135 platform
+Maintainer: 
+Source: 
+Type: ipkg
+Description: U-boot for ap135 platform
+http://www.denx.de/wiki/U-Boot
+
+@@
+
+Package: uboot-2016-ar71xx-ap152-8M
+Version: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ar71xx
+Menu-Depends: 
+Provides: 
+Build-Variant: ap152-8M-qca956x
+Section: boot
+Category: Boot Loaders
+Title: U-boot for ap152-8M platform
+Maintainer: 
+Source: 
+Type: ipkg
+Description: U-boot for ap152-8M platform
+http://www.denx.de/wiki/U-Boot
+
+@@
+
+Package: uboot-2016-ar71xx-ap152-16M
+Version: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ar71xx
+Menu-Depends: 
+Provides: 
+Build-Variant: ap152-16M-qca956x
+Section: boot
+Category: Boot Loaders
+Title: U-boot for ap152-16M platform
+Maintainer: 
+Source: 
+Type: ipkg
+Description: U-boot for ap152-16M platform
+http://www.denx.de/wiki/U-Boot
+
+@@
+
+Package: uboot-2016-ar71xx-ap151-8M
+Version: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ar71xx
+Menu-Depends: 
+Provides: 
+Build-Variant: ap151-8M-qca956x
+Section: boot
+Category: Boot Loaders
+Title: U-boot for ap151-8M platform
+Maintainer: 
+Source: 
+Type: ipkg
+Description: U-boot for ap151-8M platform
+http://www.denx.de/wiki/U-Boot
+
+@@
+
+Package: uboot-2016-ar71xx-ap151-16M
+Version: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ar71xx
+Menu-Depends: 
+Provides: 
+Build-Variant: ap151-16M-qca956x
+Section: boot
+Category: Boot Loaders
+Title: U-boot for ap151-16M platform
+Maintainer: 
+Source: 
+Type: ipkg
+Description: U-boot for ap151-16M platform
+http://www.denx.de/wiki/U-Boot
+
+@@
+
+

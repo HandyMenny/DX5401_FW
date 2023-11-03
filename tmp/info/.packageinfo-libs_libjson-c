@@ -1,0 +1,20 @@
+Source-Makefile: package/libs/libjson-c/Makefile
+Package: libjson
+Version: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: javascript object notation
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Source: json-c-.tar.gz
+Type: ipkg
+Description:  This package contains a library for javascript object notation backends.
+Felix Fietkau <nbd@openwrt.org>
+@@
+Config:
+	source "package/libs/libjson-c/Config.in"
+@@
+
+

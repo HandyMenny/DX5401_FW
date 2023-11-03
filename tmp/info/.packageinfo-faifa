@@ -1,0 +1,19 @@
+Source-Makefile: package/faifa/Makefile
+Package: faifa
+Version: 0.2~svn82.orig
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpcap
+Menu-Depends: 
+Provides: 
+Build-Depends: libopenssl libpcap
+Section: LAN
+Category: home plug
+Title: home plug faifa Daemon
+Maintainer: 
+Source: faifa-0.2~svn82.orig.tar.gz
+Type: ipkg
+Description: home plug faifa Daemon
+https://launchpad.net/ubuntu/+source/faifa/0.2~svn82-1build2
+
+@@
+
+

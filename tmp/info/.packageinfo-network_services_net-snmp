@@ -1,0 +1,20 @@
+Source-Makefile: package/network/services/net-snmp/Makefile
+Package: net-snmp
+Version: 5.8-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libjson +ZYXEL_SUPPORT_ZCFG:libzyutil +ZYXEL_SUPPORT_ZCFG:libzcfg_msg +ZYXEL_SUPPORT_ZCFG:libzcfg_fe_rdm_access +ZYXEL_SUPPORT_ZCFG:libzcfg_fe_rdm_string +ZYXEL_SUPPORT_ZCFG:libzcfg_fe_schema +ZYXEL_SUPPORT_ZCFG:libzcfg_fe_rdm_struct +libcrypto +librt +libzcmd_tool +libopenssl +NETSNMP_MODSW:glib2 +NETSNMP_MODSW:zyee
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Base system
+Title: Tools and libraries relating to the SNMP
+Maintainer: 
+Source: net-snmp-5.8.tar.gz
+Type: ipkg
+Description: Tools and libraries relating to the SNMP
+
+@@
+Config:
+	source "package/network/services/net-snmp/Config.in"
+@@
+
+

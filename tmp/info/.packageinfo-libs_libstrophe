@@ -1,0 +1,18 @@
+Source-Makefile: package/libs/libstrophe/Makefile
+Package: libstrophe
+Version: 0.10.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +expat +libresolv
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: A generic dynamic object loading library
+Maintainer: 
+Source: libstrophe-0.10.0.tar.gz
+Type: ipkg
+Description:   Helper A minimal XMPP library
+http://strophe.im/libstrophe
+
+@@
+
+

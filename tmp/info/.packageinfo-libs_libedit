@@ -1,0 +1,17 @@
+Source-Makefile: package/libs/libedit/Makefile
+Package: libedit
+Version: 20080712-2.11
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libncurses
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Edit Line library
+Maintainer: 
+Source: libedit-20080712-2.11.tar.gz
+Type: ipkg
+Description: Edit Line library
+
+@@
+
+

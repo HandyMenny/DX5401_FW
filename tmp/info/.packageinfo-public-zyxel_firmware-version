@@ -1,0 +1,18 @@
+Source-Makefile: package/public-zyxel/firmware-version/Makefile
+Package: firmware-version
+Version: 20181217-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Menu-Depends: 
+Provides: 
+Section: release
+Category: Zyxel Packages
+Title: System firmware ABI version
+Maintainer: 
+Source: 
+Type: ipkg
+Description: System firmware ABI version
+http://www.zyxel.com/
+
+@@
+
+

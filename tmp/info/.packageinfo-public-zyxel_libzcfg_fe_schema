@@ -1,0 +1,17 @@
+Source-Makefile: package/public-zyxel/libzcfg_fe_schema/Makefile
+Package: libzcfg_fe_schema
+Version: 2.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libzcfg_fe_rdm_access
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Zyxel Packages
+Title: ZyXEL Configuration Management Frontend Data Model Access Library
+Maintainer: 
+Source: libzcfg_fe_schema-2.0.tar.gz
+Type: ipkg
+Description: ZyXEL Configuration Management Frontend Data Model Access Library
+
+@@
+
+

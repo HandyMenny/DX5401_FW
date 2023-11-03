@@ -1,0 +1,17 @@
+Source-Makefile: package/network/services/zebra/Makefile
+Package: zebra
+Version: 0.93a
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Base system
+Title: RIP daemon
+Maintainer: 
+Source: zebra-0.93a.tar.gz
+Type: ipkg
+Description: RIP daemon
+
+@@
+
+

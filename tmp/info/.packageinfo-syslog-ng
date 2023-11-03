@@ -1,0 +1,28 @@
+Source-Makefile: package/syslog-ng/Makefile
+Package: syslog-ng
+Version: 2.0.10-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +glib2
+Menu-Depends: 
+Provides: 
+Section: admin
+Category: Administration
+Title: A powerful syslog daemon
+Maintainer: 
+Source: syslog-ng_2.0.10.tar.gz
+Type: ipkg
+Description: 	syslog-ng reads and logs messages to the system console, log
+	files, other machines and/or users as specified by its
+	configuration file.
+http://www.balabit.com/products/syslog_ng/
+
+@@
+Config:
+	select PACKAGE_libzcfg_msg if PACKAGE_zcfg
+	select PACKAGE_libzcmd_tool if PACKAGE_zcfg
+	select PACKAGE_libjson if PACKAGE_zcfg
+	select PACKAGE_libzcfg_fe_rdm_access if PACKAGE_zcfg
+	select PACKAGE_libzcfg_fe_rdm_struct if PACKAGE_zcfg
+	select PACKAGE_libzcfg_fe_dal if PACKAGE_zcfg
+@@
+
+

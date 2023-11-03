@@ -1,0 +1,23 @@
+Source-Makefile: package/public-zyxel/libzcfg_fe_rdm_string/Makefile
+Package: libzcfg_fe_rdm_string
+Version: 2.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libzcfg_msg +libzcfg_fe_rdm_access +libjson-c
+Menu-Depends: 
+Provides: 
+Build-Depends: PACKAGE_zcfg:zcfg
+Section: net
+Category: Zyxel Packages
+Title: ZyXEL Configuration Management Frontend Data Model Access Library By Using Json String
+Maintainer: 
+Source: libzcfg_fe_rdm_string-2.0.tar.gz
+Type: ipkg
+Description: ZyXEL Configuration Management Frontend Data Model Access Library By Using Json String
+
+@@
+Config:
+    select PACKAGE_libzcfg_msg if PACKAGE_zcfg
+	select PACKAGE_libzcfg_fe_rdm_access if PACKAGE_zcfg
+	select PACKAGE_libjson-c if PACKAGE_zcfg
+@@
+
+

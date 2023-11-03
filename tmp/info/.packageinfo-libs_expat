@@ -1,0 +1,17 @@
+Source-Makefile: package/libs/expat/Makefile
+Package: expat
+Version: 1.95.8-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: The Expat XML Parser 
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Source: expat-1.95.8.tar.gz
+Type: ipkg
+Description: Expat is an XML parser library written in C. It is a stream-oriented parser in which an application registers handlers for things the parser might find in the XML document (like start tags).
+Felix Fietkau <nbd@openwrt.org>
+@@
+
+

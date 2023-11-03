@@ -1,0 +1,18 @@
+Source-Makefile: package/network/ipv6/ipv6-support/Makefile
+Package: ipv6-support
+Version: 2012-12-28-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-ipv6 +6relayd +odhcp6c +6distributed +ip6tables +ubus
+Menu-Depends: 
+Provides: 
+Section: ipv6
+Category: IPv6
+Title: Basic IPv6-support for Customer Edge Routers
+Maintainer: Steven Barth <steven@midlink.org>
+Source: 
+Type: ipkg
+Description: This package provides basic IPv6 support including Router Discovery,
+DHCPv6 (client & server), prefix delegation and distribution.
+Steven Barth <steven@midlink.org>
+@@
+
+

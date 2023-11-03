@@ -1,0 +1,18 @@
+Source-Makefile: package/network/services/dropbear/Makefile
+Package: dropbear
+Version: 2018.76-4
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libzcfg_msg +libzcmd_tool +libjson +libzcfg_fe_rdm_access +libzcfg_fe_rdm_struct +libzyutil +libcrypto +libopenssl +libubootenv
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Base system
+Title: Small SSH2 client/server
+Maintainer: 
+Source: dropbear-2018.76.tar.bz2
+Type: ipkg
+Description:  A small SSH2 server/client designed for small memory environments.
+http://matt.ucc.asn.au/dropbear/
+
+@@
+
+

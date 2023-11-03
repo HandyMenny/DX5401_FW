@@ -1,0 +1,20 @@
+Source-Makefile: package/network/utils/owamp/Makefile
+Package: OWAMP
+Version: 4.4.4-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: A tool for performing one-way or two-way active measurements
+Maintainer: 
+Source: owamp-4.4.4.tar.gz
+Type: ipkg
+Description:   This release is contains implementations of the OWAMP (one-way active measurement protocol)
+  defined by https://tools.ietf.org/html/rfc4656 and the TWAMP (two-way active measurement protocol)
+  defined by https://tools.ietf.org/html/rfc5357.
+https://github.com/perfsonar/owamp
+
+@@
+
+

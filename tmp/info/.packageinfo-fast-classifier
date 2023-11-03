@@ -1,0 +1,49 @@
+Source-Makefile: package/fast-classifier/Makefile
+Package: kmod-fast-classifier
+Submenu: Network Support
+Version: <LINUX_VERSION>+g2eeabf3-1
+Depends: +libnl-bf +kmod-shortcut-fe
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: Kernel driver for FAST Classifier
+Maintainer: 
+Source: fast-classifier-g2eeabf3.tar.gz
+Type: ipkg
+Description: Kernel driver for FAST Classifier
+
+@@
+
+Package: fast-classifier-example
+Version: g2eeabf3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnl +libfast-classifier
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: Extra packages
+Title: Example user space program for fast-classifier
+Maintainer: 
+Source: fast-classifier-g2eeabf3.tar.gz
+Type: ipkg
+Description: Example user space program that communicates with fast
+classifier kernel module
+
+@@
+
+Package: libfast-classifier
+Version: g2eeabf3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Library to invoke fast-classifier offload
+Maintainer: 
+Source: fast-classifier-g2eeabf3.tar.gz
+Type: ipkg
+Description: Library to invoke fast-classifier offload
+
+@@
+
+

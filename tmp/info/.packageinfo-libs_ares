@@ -1,0 +1,17 @@
+Source-Makefile: package/libs/ares/Makefile
+Package: ares
+Version: 1.1.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: dnssrv library
+Maintainer: 
+Source: ares-1.1.1-raw.tar.gz
+Type: ipkg
+Description: dnssrv library
+
+@@
+
+

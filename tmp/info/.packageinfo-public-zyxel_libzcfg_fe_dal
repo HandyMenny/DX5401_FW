@@ -1,0 +1,17 @@
+Source-Makefile: package/public-zyxel/libzcfg_fe_dal/Makefile
+Package: libzcfg_fe_dal
+Version: 2.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libzcfg_fe_rdm_string +libzcfg_fe_rdm_struct +libzcfg_fe_schema +libzyutil +libzlog
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Zyxel Packages
+Title: ZyXEL Configuration Management Data Access Library
+Maintainer: 
+Source: libzcfg_fe_dal-2.0.tar.gz
+Type: ipkg
+Description: ZyXEL Configuration Management Data Access Library
+
+@@
+
+

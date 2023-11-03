@@ -1,0 +1,22 @@
+Source-Makefile: package/lxc/Makefile
+Package: lxc
+Version: 2.0.4-2
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: LXC userspace tools
+Maintainer: Marko Ratkaj <marko.ratkaj@sartura.hr>
+Source: lxc-2.0.4.tar.gz
+Type: ipkg
+Description: 	LXC is the userspace control package for Linux Containers, a lightweight
+	virtual system mechanism sometimes described as "chroot on steroids".
+http://lxc.sourceforge.net/
+Marko Ratkaj <marko.ratkaj@sartura.hr>
+@@
+Config:
+	source "package/lxc/Config.in"
+@@
+
+

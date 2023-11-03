@@ -1,0 +1,17 @@
+Source-Makefile: package/network/services/dhcpoptinj/Makefile
+Package: dhcpoptinj
+Version: 1.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libnfnetlink +libnetfilter_queue
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Base system
+Title: A deamon to receive and handle dhcp opt82 insertion via NF_QUEUE
+Maintainer: 
+Source: dhcpoptinj-1.0.tar.gz
+Type: ipkg
+Description: A deamon to receive and handle dhcp opt82 insertion via NF_QUEUE
+
+@@
+
+

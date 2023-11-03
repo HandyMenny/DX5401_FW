@@ -1,0 +1,17 @@
+Source-Makefile: package/logrotate/Makefile
+Package: logrotate
+Version: 3.7.1-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpopt
+Menu-Depends: 
+Provides: 
+Section: base
+Category: Base system
+Title: Utility which generates a lot of log files
+Maintainer: 
+Source: logrotate-3.7.1.tar.gz
+Type: ipkg
+Description: Utility which generates a lot of log files
+
+@@
+
+

@@ -1,0 +1,17 @@
+Source-Makefile: package/platform/quantenna/call_qcsapi_client/Makefile
+Package: call_qcsapi_client
+Version: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Quantenna Packages
+Title: Quantenna qcapi client
+Maintainer: 
+Source: call_qcsapi_client_.tar.bz2
+Type: ipkg
+Description:  This package use to control Quantenna 5G WiFi module.
+
+@@
+
+

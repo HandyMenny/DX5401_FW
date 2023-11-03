@@ -1,0 +1,17 @@
+Source-Makefile: package/public-zyxel/libzos/Makefile
+Package: libzos
+Version: 1.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libzlog
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Zyxel public package
+Title: OS porting layer
+Maintainer: 
+Source: 
+Type: ipkg
+Description: OS porting layer
+
+@@
+
+

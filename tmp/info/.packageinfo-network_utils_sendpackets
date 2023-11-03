@@ -1,0 +1,17 @@
+Source-Makefile: package/network/utils/sendpackets/Makefile
+Package: sendpackets
+Version: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpcap
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Utility to send packet to network interface.
+Maintainer: 
+Source: 
+Type: ipkg
+Description:  This package contains the small sendpackets utility to netork interface
+
+@@
+
+

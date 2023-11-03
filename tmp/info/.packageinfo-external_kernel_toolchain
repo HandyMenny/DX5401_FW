@@ -1,0 +1,263 @@
+Source-Makefile: package/external_kernel_toolchain/Makefile
+Package: external-kernel-libc
+Version: -1
+Depends: +external-kernel-libgcc
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Base system
+Title: External kernel C library
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Source: 
+Type: ipkg
+Description: External kernel C library
+Felix Fietkau <nbd@openwrt.org>
+@@
+Config:
+	menu "Configuration"
+	depends on EXTERNAL_KERNEL_TOOLCHAIN && PACKAGE_external-kernel-libc
+
+	config EXTERNAL_KERNAL_LIBC_FILE_SPEC
+		string
+		prompt "external-kernel-libc shared library files (use wildcards)"
+		depends on EXTERNAL_KERNEL_TOOLCHAIN && PACKAGE_external-kernel-libc
+		default "./lib/lib{anl,c,uClibc,cidn,crypt,dl,m,nsl,nss_dns,nss_files,util}{-*.so,.so.*}"
+
+	endmenu
+@@
+
+Package: external-kernel-libgcc
+Version: -1
+Depends: @EXTERNAL_KERNEL_TOOLCHAIN
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Base system
+Title: External kernel gcc support library
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Source: 
+Type: ipkg
+Description: External kernel gcc support library
+http://gcc.gnu.org/
+Felix Fietkau <nbd@openwrt.org>
+@@
+Config:
+	menu "Configuration"
+		depends on EXTERNAL_KERNEL_TOOLCHAIN && PACKAGE_external-kernel-libgcc
+
+	config EXTERNAL_KERNAL_LIBGCC_FILE_SPEC
+		string
+		prompt "libgcc shared library files (use wildcards)"
+		depends on EXTERNAL_KERNEL_TOOLCHAIN && PACKAGE_external-kernel-libgcc
+		default "./lib/libgcc_s.so.*"
+
+	endmenu
+@@
+
+Package: external-kernel-libssp
+Version: -1
+Depends: @EXTERNAL_KERNEL_TOOLCHAIN
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Base system
+Title: external-kernel-gcc support library
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Source: 
+Type: ipkg
+Description: external-kernel-gcc support library
+http://gcc.gnu.org/
+Felix Fietkau <nbd@openwrt.org>
+@@
+Config:
+	menu "Configuration"
+		depends on EXTERNAL_KERNEL_TOOLCHAIN && PACKAGE_external-kernel-libssp
+
+	config EXTERNAL_KERNAL_LIBSSP_FILE_SPEC
+		string
+		prompt "libssp shared library files (use wildcards)"
+		depends on EXTERNAL_KERNEL_TOOLCHAIN && PACKAGE_external-kernel-libssp
+		default "./lib/libssp.so.*"
+
+	endmenu
+@@
+
+Package: external-kernel-libstdcpp
+Version: -1
+Depends: @EXTERNAL_KERNEL_TOOLCHAIN
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Base system
+Title: GNU Standard C++ Library v3
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Source: 
+Type: ipkg
+Description: GNU Standard C++ Library v3
+http://gcc.gnu.org/
+Felix Fietkau <nbd@openwrt.org>
+@@
+Config:
+	menu "Configuration"
+	depends on EXTERNAL_KERNEL_TOOLCHAIN && PACKAGE_external-kernel-libstdcpp
+
+	config EXTERNAL_KERNAL_LIBSTDCPP_FILE_SPEC
+		string
+		prompt "libstdc++ shared library files (use wildcards)"
+		depends on EXTERNAL_KERNEL_TOOLCHAIN && PACKAGE_external-kernel-libstdcpp
+		default "./lib/libstdc++.so.*"
+
+	endmenu
+@@
+
+Package: external-kernel-libpthread
+Version: -1
+Depends: +external-kernel-libgcc
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Base system
+Title: POSIX thread library
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Source: 
+Type: ipkg
+Description: POSIX thread library
+Felix Fietkau <nbd@openwrt.org>
+@@
+Config:
+	menu "Configuration"
+	depends on EXTERNAL_KERNEL_TOOLCHAIN && PACKAGE_external-kernel-libpthread
+
+	config EXTERNAL_KERNAL_LIBPTHREAD_FILE_SPEC
+		string
+		prompt "external-kernel-libpthread shared library files (use wildcards)"
+		depends on EXTERNAL_KERNEL_TOOLCHAIN && PACKAGE_external-kernel-libpthread
+		default "./lib/libpthread{-*.so,.so.*}"
+
+	endmenu
+@@
+
+Package: external-kernel-libthread-db
+Version: -1
+Depends: +external-kernel-libgcc
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Base system
+Title: POSIX thread library debugging support
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Source: 
+Type: ipkg
+Description: POSIX thread library debugging support
+Felix Fietkau <nbd@openwrt.org>
+@@
+
+Package: external-kernel-librt
+Version: -1
+Depends: +external-kernel-libpthread +external-kernel-libc
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Base system
+Title: POSIX.1b RealTime extension library
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Source: 
+Type: ipkg
+Description: POSIX.1b RealTime extension library
+Felix Fietkau <nbd@openwrt.org>
+@@
+Config:
+	menu "Configuration"
+	depends on EXTERNAL_KERNEL_TOOLCHAIN && PACKAGE_external-kernel-librt
+
+	config EXTERNAL_KERNAL_LIBRT_FILE_SPEC
+		string
+		prompt "external-kernel-librt shared library files (use wildcards)"
+		depends on EXTERNAL_KERNEL_TOOLCHAIN && PACKAGE_external-kernel-librt
+		default "./lib/librt{-*.so,.so.*}"
+
+	endmenu
+@@
+
+Package: external-kernel-libresolv
+Version: -1
+Depends: +external-kernel-libgcc
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Base system
+Title: resolver library
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Source: 
+Type: ipkg
+Description: resolver library
+Felix Fietkau <nbd@openwrt.org>
+@@
+Config:
+	menu "Configuration"
+	depends on EXTERNAL_KERNEL_TOOLCHAIN && PACKAGE_external-kernel-libresolv
+
+	config EXTERNAL_KERNAL_LIBRESOLV_FILE_SPEC
+		string
+		prompt "external-kernel-libresolv shared library files (use wildcards)"
+		depends on EXTERNAL_KERNEL_TOOLCHAIN && PACKAGE_external-kernel-libresolv
+		default "./lib/libresolv{-*.so,.so.*}"
+
+	endmenu
+@@
+
+Package: external-kernel-ldd
+Version: -1
+Depends: +external-kernel-libgcc
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: LDD trace utility
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Source: 
+Type: ipkg
+Description: LDD trace utility
+Felix Fietkau <nbd@openwrt.org>
+@@
+Config:
+	menu "Configuration"
+		depends on EXTERNAL_KERNEL_TOOLCHAIN && PACKAGE_external-kernel-ldd
+
+	config EXTERNAL_KERNAL_LDD_FILE_SPEC
+		string
+		prompt "ldd trace utility file"
+		depends on EXTERNAL_KERNEL_TOOLCHAIN && PACKAGE_external-kernel-ldd
+		default "./usr/bin/ldd"
+
+	endmenu
+@@
+
+Package: external-kernel-ldconfig
+Version: -1
+Depends: @EXTERNAL_KERNEL_TOOLCHAIN
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Shared library path configuration
+Maintainer: Felix Fietkau <nbd@openwrt.org>
+Source: 
+Type: ipkg
+Description: Shared library path configuration
+Felix Fietkau <nbd@openwrt.org>
+@@
+Config:
+	menu "Configuration"
+		depends on EXTERNAL_KERNEL_TOOLCHAIN && PACKAGE_external-kernel-ldconfig
+
+	config EXTERNAL_KERNAL_LDCONFIG_FILE_SPEC
+		string
+		prompt "ldconfig file"
+		depends on EXTERNAL_KERNEL_TOOLCHAIN && PACKAGE_external-kernel-ldconfig
+		default "./sbin/ldconfig"
+
+	endmenu
+@@
+
+

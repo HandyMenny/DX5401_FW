@@ -1,0 +1,21 @@
+Source-Makefile: package/boot/grub2/Makefile
+Package: grub2
+Submenu: Boot Loaders
+Version: 2.00-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_x86
+Menu-Depends: 
+Provides: 
+Build-Depends: grub2/host
+Build-Types: host
+Section: utils
+Category: Utilities
+Title: GRand Unified Bootloader
+Maintainer: 
+Source: grub-2.00.tar.gz
+Type: ipkg
+Description: GRand Unified Bootloader
+http://www.gnu.org/software/grub/
+
+@@
+
+

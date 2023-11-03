@@ -1,0 +1,42 @@
+Source-Makefile: package/fuse/Makefile
+Package: fuse-utils
+Submenu: Filesystem
+Version: 2.9.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libfuse
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: FUSE (utilities)
+Maintainer: 
+Source: fuse-2.9.3.tar.gz
+Type: ipkg
+Description:  FUSE (Filesystem in UserSpacE)
+ This package contains the FUSE utilities.
+ - fusermount
+ - ulockmgr_server
+http://fuse.sourceforge.net/
+
+@@
+
+Package: libfuse
+Submenu: Filesystem
+Version: 2.9.3-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +kmod-fuse +libpthread
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: FUSE (library)
+Maintainer: 
+Source: fuse-2.9.3.tar.gz
+Type: ipkg
+Description:  FUSE (Filesystem in UserSpacE)
+ This package contains the FUSE shared libraries, needed by other programs.
+ - libfuse
+ - libulockmgr
+http://fuse.sourceforge.net/
+
+@@
+
+

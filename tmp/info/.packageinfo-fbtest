@@ -1,0 +1,17 @@
+Source-Makefile: package/fbtest/Makefile
+Package: fbtest
+Version: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread @DISPLAY_SUPPORT
+Menu-Depends: 
+Provides: 
+Section: utils
+Category: Utilities
+Title: Frame buffer device testing tool
+Maintainer: 
+Source: 
+Type: ipkg
+Description: Frame buffer device testing tool
+
+@@
+
+

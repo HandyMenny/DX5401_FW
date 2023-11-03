@@ -1,0 +1,17 @@
+Source-Makefile: package/rs6/Makefile
+Package: rs6
+Version: 1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread 
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Zyxel Packages
+Title: rs6/Send IPv6 RS
+Maintainer: 
+Source: 
+Type: ipkg
+Description:   rs6/Send IPv6 RS
+
+@@
+
+

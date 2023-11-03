@@ -1,0 +1,19 @@
+Source-Makefile: package/network/services/pptpd/Makefile
+Package: pptpd
+Version: 1.4.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +ppp +kmod-mppe +kmod-gre +kmod-iptunnel4
+Menu-Depends: 
+Provides: 
+Build-Depends: ppp
+Section: net
+Category: Network
+Title: PPTP server
+Maintainer: Jo-Philipp Wich <xm@subsignal.org>
+Source: pptpd-1.4.0.tar.gz
+Type: ipkg
+Description:  This package contains a PPTP (Point-to-Point Tunneling Protocol) server.
+https://sourceforge.net/projects/poptop/
+Jo-Philipp Wich <xm@subsignal.org>
+@@
+
+

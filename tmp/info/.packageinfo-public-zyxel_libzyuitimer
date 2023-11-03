@@ -1,0 +1,17 @@
+Source-Makefile: package/public-zyxel/libzyuitimer/Makefile
+Package: libzyuitimer
+Version: 2.0-1
+Depends: +libc +USE_GLIBC:librt +USE_GLIBC:libpthread +libpthread +libzos +libzlog
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Zyxel Packages
+Title: ZyXEL User Interface Timer
+Maintainer: 
+Source: libzyuitimer-2.0.tar.gz
+Type: ipkg
+Description: ZyXEL User Interface Timer
+
+@@
+
+
