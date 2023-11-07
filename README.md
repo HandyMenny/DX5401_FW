@@ -55,7 +55,7 @@ ReadMe for V5.17(ABYO.4)C0
 
 6. The image is in the images directory.
 
-    The firmware image will locate at <extrated directory>/bin/brcm963xx-glibc/zyxel/ras.bin
+    The firmware image will locate at <extrated directory>/bin/brcm963xx-glibc/zyxel_pureUbi/ras.bin
     You can use it update DX5401-B0 series by using the firmware update procedure.
 
 
